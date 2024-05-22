@@ -1,0 +1,19 @@
+import { MenuOptions } from './menu-options.js';
+
+/**
+ * @param {string} choice
+ * @returns {Promise<void>}
+ */
+export async function OptionsHandler(choice) {
+  switch (choice) {
+    case MenuOptions.START_DAYDREAM_OPTION:
+      console.log('Starting...');
+      break;
+    case MenuOptions.EXIT_OPTION:
+      console.log('Goodbye! 😴');
+      process.exit(0);
+    default:
+      console.log(`⚠️  Invalid option`);
+      process.exit(1);
+  }
+}
