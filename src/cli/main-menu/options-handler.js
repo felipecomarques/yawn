@@ -1,3 +1,4 @@
+import { moveMouseSideToSide } from '../../functions/bruxism/move-mouse.js';
 import { MenuOptions } from './menu-options.js';
 
 /**
@@ -6,8 +7,8 @@ import { MenuOptions } from './menu-options.js';
  */
 export async function OptionsHandler(choice) {
   switch (choice) {
-    case MenuOptions.START_DAYDREAM_OPTION:
-      console.log('Starting...');
+    case MenuOptions.START_BRUXISM_OPTION:
+      moveMouseSideToSide();
       break;
     case MenuOptions.EXIT_OPTION:
       console.log('Goodbye! 😴');
